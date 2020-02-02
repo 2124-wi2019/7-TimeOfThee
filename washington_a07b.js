@@ -27,7 +27,7 @@ standardInput.on('data', function (text) {
     if(text.toLowerCase()=="q"){//check for bail
         console.log("Bye");
         process.exit();
-    }else if(text.toLowerCase()=="v"){
+    }else if(text.toLowerCase()=="v"){//check for review
         console.log(displayList(groceryItems));
         console.log(getPrompt(groceryItems));
     }else{
